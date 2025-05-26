@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Animal Gallery</title>
+
+    <!-- Add Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Add custom CSS -->
+    <style>
+        .animal-card {
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+        }
+
+        .animal-card:hover {
+            transform: scale(1.03);
+        }
+
+        .animal-img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .gallery-container {
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Animal Gallery</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="details.html">Details</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="animal-card card">
+                <div class="card-body">
+                    <h1 class="card-title">About</h6>
+                        <p class="card-text">This gallery showcases different animals shown on Earth; the Dog, the Cat,
+                            the Crow, the Deer, and the Shark. When clicking to view deatils on one of them, a paragraph
+                            describing the animal will be shown, and a <button disabled="disabled"></button> to go back to the gallery at the bottom.
+                            Dog: A dog is a domesticated mammal known for its loyalty, intelligence, and companionship.
+                            It belongs to the canine family and comes in various breeds, sizes, and temperaments.
+                            Cat: A cat is a small, domesticated mammal known for its agility, independence, and playful
+                            behavior. It is a popular pet with sharp claws, keen senses, and a strong hunting instinct.
+                            Crow: A crow is a highly intelligent bird known for its black plumage, sharp beak, and
+                            distinctive cawing sound. It is part of the corvid family and is often associated with
+                            mystery and folklore.
+                            Deer: A deer is a graceful, herbivorous mammal known for its antlers and slender legs. It is
+                            often found in forests and grasslands, and is known for its agility and speed.
+                            Shark: A shark is a large, carnivorous fish known for its sizable, slick body, sharp teeth,
+                            and keen senses. Most sharks are great swimmers and top predators of marine life. Contrary
+                            to popular belief, they do not hunt humans.
+                        </p>
+                        <a href="index.html" class="btn btn-primary">Gallery</a>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
